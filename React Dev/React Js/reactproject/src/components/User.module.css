@@ -1,0 +1,11 @@
+.pNomes {
+    color: rgb(65, 62, 62);
+    margin: 10px;
+    border: 1px solid rgb(145, 144, 144);
+    background-color: rgb(76, 158, 131);
+}
+
+.pNomes:hover {
+    color: white;
+    transition: all 1s;
+}

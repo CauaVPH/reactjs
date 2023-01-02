@@ -1,0 +1,125 @@
+form {
+    width: max-content;
+    margin: 30px 0 0 50px;
+}
+
+form > div {
+    position: relative;
+}
+
+form > div > input[type="email"], input[type="password"] {
+    display: block;
+    width: 30em;
+    height: 3em;
+    margin: 30px 0 0 0;
+    border: 1px solid rgb(70, 24, 177);
+    border-radius: 40px;
+    outline: none;
+    text-indent: 30px;
+}
+
+input[type="email"]::placeholder, input[type="password"]::placeholder {
+    position: relative;
+    color: rgb(168, 170, 170);
+}
+
+input[type="checkbox"], form > div > .label1 {
+    margin-top: 20px;
+}
+
+form > div > .label1 {
+    margin-left: 30px;
+    font-family: 'lato', sans-serif;
+    color: rgb(168, 170, 170);
+    font-size: 0.8em;
+}
+
+@media screen and (max-width: 600px) {
+    form > div > input[type="email"], input[type="password"] {
+        width: 75vw;
+    }
+
+    div > form > .textLogin {
+        width: 75vw;
+    }
+
+}
+
+@media screen and (min-width: 1160px) {
+    div > form > .textLogin {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1160px) {
+    form {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+form > .textLogin {
+    width: 406px;
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+  }
+  
+form > .textLogin > h2 {
+    letter-spacing: 1px;
+  }
+  
+form > .textLogin > h5 > b {
+    color: rgb(105, 21, 184);
+  }
+
+form > div > .label2 {
+    position: absolute;
+    bottom:0;
+    right: 0;
+    font-family: 'lato', sans-serif;
+    color: rgb(168, 170, 170);
+    font-size: 0.8em;
+}
+
+form > div > button {
+    width: 8em;
+    height: 2.5em;
+    outline: 0;
+    background-color: rgb(70, 24, 177);
+    border: none;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -4.5em;
+    right: 0;
+    color: white;
+    font-weight: 600;
+    transition: all 1s;
+}
+
+form > div > button:hover {
+    box-shadow: 0 0 39px 2px rgb(70, 24, 177);
+}
+
+form footer {
+    position: absolute;
+    bottom: 0.4em;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    color: rgb(168, 170, 170);
+    align-items: center;
+}
+
+form footer h4 {
+    font-size: 0.8em;
+}
+
+form footer > img {
+    width: 1em;
+    height: 1em;
+    margin: 0 0 0 2em;
+}
